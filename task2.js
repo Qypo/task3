@@ -1,6 +1,15 @@
+if (process.argv.length <= 2) {
+    process.exit(-1);
+}
+
 var str = process.argv[2];
 
 var arr = str.split(''); //делим строку в массив посимвольно
+
+if(arr.length > 100)
+{
+    process.exit(-1);
+}
 
 var arr_main = arr;
 
